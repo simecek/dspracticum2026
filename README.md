@@ -11,7 +11,7 @@ In the upcoming sessions, we will cover topics like *Convolutional Neural Networ
 ## Lessons
 
   1. [Lesson 01](lesson01/) (18.9.): Introduction, Convolutional Neural Networks
-  1. Lesson 02 (25.9.): TBD
+  1. Lesson 02 (25.9.): Dense NN and CNN in PyTorch, Fine-tuning
   1. Lesson 03 (2.10.): TBD
   1. Lesson 04 (9.10.): TBD
   1. Lesson 05 (16.10.): TBD
