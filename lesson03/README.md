@@ -15,6 +15,7 @@
 **Notes:**
 * We have not covered Gradio and HuggingFace Spaces yet. I will explain them in the lesson on Oct 9, so it is a good idea to have your dataset and model ready by then.
 * If you have any questions, ask them in the lesson on Oct 9.
+* If you prefer another framework to Gradio (e.g. you vibe-code a small web app and host it on DigitalOcean or elsewhere), feel free to do that. The app just needs to be publicly accessible, so that you can submit its link.
 
 ### Dataset format
 
