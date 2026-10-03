@@ -11,16 +11,14 @@ In the upcoming sessions, we will cover topics like *Convolutional Neural Networ
 ## Lessons
 
   1. [Lesson 01](lesson01/) (18.9.): Introduction, Convolutional Neural Networks
-  1. Lesson 02 (25.9.): Dense NN and CNN in PyTorch, Fine-tuning
-  1. Lesson 03 (2.10.): TBD
+  1. [Lesson 02](lesson02/) (25.9.): Dense NN and CNN in PyTorch, Fine-tuning
+  1. [Lesson 03](lesson03/) (2.10.): fastai & fine-tuning colabs, Transformers (video)
   1. Lesson 04 (9.10.): TBD
   1. Lesson 05 (16.10.): TBD
-  1. Lesson 06 (23.10.): TBD
-  1. Lesson 07 (30.10.): TBD
-  1. Lesson 08 (6.11.): TBD
-  1. Lesson 09 (13.11.): TBD
-  1. Lesson 10 (20.11.): TBD
-  1. Lesson 11 (27.11.): TBD
-  1. Lesson 12 (4.12.): TBD
-  1. Lesson 13 (11.12.): TBD
-  1. Lesson 14 (18.12.): Final discussion (show & tell)
+  1. Lesson 06 (6.11.): TBD
+  1. Lesson 07 (13.11.): TBD
+  1. Lesson 08 (20.11.): TBD
+  1. Lesson 09 (27.11.): TBD
+  1. Lesson 10 (4.12.): TBD
+  1. Lesson 11 (11.12.): TBD
+  1. Lesson 12 (18.12.): Final discussion (show & tell)

@@ -1,0 +1,8 @@
+# the same versions as in Google Colab (October 2026), where the model was trained
+# (also check that README.md of your Space contains: python_version: '3.13')
+fastai==2.8.12
+timm==1.0.30
+torch==2.11.0
+torchvision==0.26.0
+# the Space has no GPU, so install the smaller CPU-only PyTorch
+--extra-index-url https://download.pytorch.org/whl/cpu
