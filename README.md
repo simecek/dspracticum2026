@@ -13,7 +13,7 @@ In the upcoming sessions, we will cover topics like *Convolutional Neural Networ
   1. [Lesson 01](lesson01/) (18.9.): Introduction, Convolutional Neural Networks
   1. [Lesson 02](lesson02/) (25.9.): Dense NN and CNN in PyTorch, Fine-tuning
   1. [Lesson 03](lesson03/) (2.10.): fastai & fine-tuning colabs, Transformers (video)
-  1. Lesson 04 (9.10.): TBD
+  1. [Lesson 04](lesson04/) (9.10.): Tokenization and the transformer block (GPT-2)
   1. Lesson 05 (16.10.): TBD
   1. Lesson 06 (6.11.): TBD
   1. Lesson 07 (13.11.): TBD
