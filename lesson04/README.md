@@ -1,5 +1,7 @@
 **Date**: Oct 9, 2026
 
+**Slides**: https://claude.ai/artifact/DJg4SZeKfTgAAYMs757w8s (outline in [slides04.md](slides04.md))
+
 * Assignment 02 check-in: Gradio and Hugging Face Spaces (see [Lesson 03](../lesson03/))
   * two minimal Gradio apps, text in and picture in: [gradio_minimal.ipynb](https://colab.research.google.com/github/simecek/dspracticum2026/blob/main/lesson04/gradio_minimal.ipynb)
 * Inside GPT-2: tokenization, the transformer block and training a mini GPT, all in one notebook: [gpt2_inside.ipynb](https://colab.research.google.com/github/simecek/dspracticum2026/blob/main/lesson04/gpt2_inside.ipynb)
