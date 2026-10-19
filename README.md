@@ -10,12 +10,14 @@ In the upcoming sessions, we will cover topics like *Convolutional Neural Networ
 
 ## Lessons
 
+**Schedule change:** there are no lessons on 23.10. and 30.10. The lesson on 6.11. will be online, via Google Meet (the link is on Slack).
+
   1. [Lesson 01](lesson01/) (18.9.): Introduction, Convolutional Neural Networks
   1. [Lesson 02](lesson02/) (25.9.): Dense NN and CNN in PyTorch, Fine-tuning
   1. [Lesson 03](lesson03/) (2.10.): fastai & fine-tuning colabs, Transformers (video)
   1. [Lesson 04](lesson04/) (9.10.): Tokenization and the transformer block (GPT-2)
   1. [Lesson 05](lesson05/) (16.10.): Hugging Face (Hub, `transformers`, `datasets`), OpenAI API, BERT and fine-tuning a classifier
-  1. Lesson 06 (6.11.): TBD
+  1. Lesson 06 (6.11., online via Google Meet): How large language models are trained
   1. Lesson 07 (13.11.): TBD
   1. Lesson 08 (20.11.): TBD
   1. Lesson 09 (27.11.): TBD
