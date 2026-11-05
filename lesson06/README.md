@@ -13,25 +13,15 @@ Today we watch parts of Andrej Karpathy's [Deep Dive into LLMs like ChatGPT](htt
 
 **Things to watch for:**
 
-* **From a base model to an assistant.** The base model after pretraining only continues documents, like GPT-2 in [Lesson 05](../lesson05/). An assistant comes from more training on example conversations (*supervised finetuning*). This uses the same next-token loss as our Shakespeare GPT.
-* **Models need tokens to think.** Every token gets the same, fixed amount of computation: one pass through all the blocks, 12 in GPT-2. A hard problem therefore has to be spread over many tokens: the model "thinks out loud".
-* **Reinforcement learning.** So far we always trained on labels: the correct next token, the correct class. In reinforcement learning the model tries many solutions, we check which ones reach the right answer, and we reinforce those. Nobody writes the reasoning for it. Long reasoning that checks and corrects itself emerged this way in DeepSeek-R1.
+* **Base model → assistant:** further training on example conversations, with the same next-token loss as our Shakespeare GPT.
+* **Models need tokens to think:** each token gets a fixed amount of computation, so hard problems need many tokens.
+* **Reinforcement learning:** no labels. The model tries many solutions and the ones with the right answer are reinforced. This is how DeepSeek-R1 learned to reason.
 
 ## What has changed since the video (Feb 2025)
 
-* **Thinking is now a setting, not a separate model.** In early 2025 you chose between "thinking" models (OpenAI o1/o3, DeepSeek-R1) and normal ones (GPT-4o). Today most models can do both, and you choose how much they think. In the OpenAI API this is the `reasoning_effort` parameter from [Lesson 05, notebook 2](https://colab.research.google.com/github/simecek/dspracticum2026/blob/main/lesson05/02_openai_api.ipynb). For `gpt-5.6-luna` it goes from `"none"` over `"low"`, `"medium"` (the default) and `"high"` up to `"xhigh"` and `"max"`. More effort usually means better answers to hard questions, but also slower and more expensive ones.
-* **You pay for thinking you do not see.** The reasoning tokens are hidden, but they are billed as output tokens. You only see how many there were: `response.usage.completion_tokens_details.reasoning_tokens`. DeepSeek-R1 in the video shows its whole reasoning; OpenAI's models show at most a summary.
-* **Some settings no longer work.** With reasoning switched on, the OpenAI API does not accept `temperature` or `logprobs`. Sampling and next-token probabilities, which we played with in Lessons 04 and 05, are only available with `reasoning_effort="none"`.
-* **Open thinking models.** Thinking models with public weights are now common on the Hugging Face Hub, e.g. OpenAI's gpt-oss and Qwen3. Their reasoning is visible as text, often between `<think>` and `</think>`. Small models often learn to reason by training on the reasoning of bigger models (*distillation*).
-* **Thinking with tools.** Today's models do not only think: while thinking, they search the web, run code and call other tools, and then continue thinking with the results.
-
-**Try it:** In [Lesson 05, notebook 2](https://colab.research.google.com/github/simecek/dspracticum2026/blob/main/lesson05/02_openai_api.ipynb), section 2, ask the bat-and-ball question with `reasoning_effort` set to `"none"`, `"low"` and `"high"`. Compare the answers, the number of hidden reasoning tokens and the price.
-
-**Additional materials:**
-
-* Andrej Karpathy: [How I use LLMs](https://www.youtube.com/watch?v=EWvNQjAaOHw) (Feb 2025), the practical companion to today's video
-* [DeepSeek-R1 paper](https://arxiv.org/abs/2501.12948): reinforcement learning that taught a model to reason
-* [InstructGPT paper](https://arxiv.org/abs/2203.02155): supervised finetuning and RLHF, the recipe behind the first ChatGPT
-* [AlphaGo, move 37](https://www.youtube.com/watch?v=HT-UZkiOLv8): what reinforcement learning can discover
+* **Thinking is a setting, not a separate model.** You choose how much a model thinks: `reasoning_effort` in the OpenAI API ([Lesson 05, notebook 2](https://colab.research.google.com/github/simecek/dspracticum2026/blob/main/lesson05/02_openai_api.ipynb)), from `"none"` to `"high"` and beyond. More effort is usually better on hard problems, but slower and more expensive.
+* **Hidden reasoning is still billed.** You see only how many tokens it took (`usage.completion_tokens_details.reasoning_tokens`). With reasoning on, `temperature` and `logprobs` are not available.
+* **Open thinking models** (e.g. gpt-oss, Qwen3) on the Hugging Face Hub show their reasoning as text, often between `<think>` and `</think>`.
+* **Models think with tools:** they search the web or run code while thinking.
 
 **Next week** we continue with **tools and agents**: how a model calls tools, and how an agent works by itself in a loop of thinking, calling tools and looking at the results.
