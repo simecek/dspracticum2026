@@ -17,12 +17,11 @@ curl -fsSL https://opencode.ai/v2/install | bash
 
 **Model:** run `opencode` in a project folder, then `/models`. The models marked *free* need no payment (for a limited time). Some of them may use your prompts for training, so don't send them anything private. With an OpenAI API key (Lesson 05), use `/connect`.
 
-**Things to try:**
+**Exercises** (start in a new folder: `mkdir csfd-analysis && cd csfd-analysis && git init && opencode`):
 
-1. Make an empty folder, start `opencode` and ask it to write a script that loads the ČSFD reviews from Lesson 05 and plots the distribution of ratings. Watch which tools it calls.
-2. Switch to the `plan` agent first: it explores and suggests a plan, but does not edit files. Then let the `build` agent do it.
-3. Write an `AGENTS.md` file: how to run the code, which libraries to use, in which language to comment. Does the agent follow it?
-4. Permissions: by default the agent may run commands by itself. Make it ask first (`opencode.jsonc`):
+1. **Plan, then build.** Switch to the `plan` agent (Shift+Tab) and ask it to plan a small project that loads the ČSFD reviews from Lesson 05 (`fewshot-goes-multilingual/cs_csfd-movie-reviews`) and plots the distribution of star ratings and review lengths. Correct the plan, then let the `build` agent write it. Watch which tools it calls.
+2. **AGENTS.md.** Ask the agent to write `AGENTS.md` (how to install, run, which libraries, code style), add your own rules, start a new session and check that it follows them.
+3. **A feature with a test.** Ask for a function that returns the 10 most reviewed movies, with a `pytest` test, and let it run and fix the tests. Then make shell commands ask first (`opencode.jsonc`):
 
 ```jsonc
 {
@@ -31,6 +30,9 @@ curl -fsSL https://opencode.ai/v2/install | bash
   ]
 }
 ```
+
+4. **Push to GitHub.** Log in yourself first with `gh auth login` (never give the agent a password or token). Then ask the agent to add a README and a `.gitignore`, commit, and push to a new public repository `csfd-analysis` with `gh`. Read the diff before the commit and approve the push yourself: `/undo` reverts files, not a push. Share the link on Slack (optional).
+5. **Bonus:** turn the notebook's agent into `agent.py` with a pydantic tool, add an MCP server, or run opencode on your Assignment 02 repository.
 
 **Additional materials:**
 
