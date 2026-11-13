@@ -1,5 +1,7 @@
 **Date**: Nov 13, 2026
 
+**Slides**: [Google Slides](https://docs.google.com/presentation/d/1RveRHi3D4EE5p00RaV2e1phX35yDEw4g/edit?usp=sharing)
+
 **Tools and agents**
 
 * Tool calling by hand with a tiny open model (Qwen3.5-0.8B, free on the Colab GPU): a tool is just text in the prompt, parsing a tool call, sending the result back, the agent loop, and pydantic for typed tool arguments: [01_tool_calling.ipynb](https://colab.research.google.com/github/simecek/dspracticum2026/blob/main/lesson07/01_tool_calling.ipynb)
