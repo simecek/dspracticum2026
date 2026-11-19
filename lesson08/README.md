@@ -26,9 +26,11 @@ These are the small tasks from the slides. Every result shown in the slides came
 
 ```bash
 mkdir csfd-agent && cd csfd-agent
-cp /path/to/lesson08/csfd_*.csv .
+cp /path/to/lesson08/csfd_*.csv /path/to/lesson08/opencode.json .
 git init && opencode
 ```
+
+The [opencode.json](opencode.json) keeps the agent inside this folder (see [below](#keep-the-agent-inside-its-folder)). For exercise 6, start without it to see the default behaviour, then copy it in.
 
 Then pick a model with `/models`, for example `deepseek-v4.1-flash-free`. In the terminal, `opencode run -m opencode/<model> "<prompt>"` runs one prompt without the full-screen interface.
 
@@ -109,7 +111,7 @@ Then type `/top 3`.
 
 ## Keep the agent inside its folder
 
-By default, opencode may read and edit files outside the folder you start it in. To stop that, put this `opencode.json` into the project folder:
+By default, opencode may read and edit files outside the folder you start it in. To stop that, put this [opencode.json](opencode.json) into the project folder, next to the data. It applies only to that folder and its subfolders, on Windows, Linux and macOS alike:
 
 ```json
 {
