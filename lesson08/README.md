@@ -1,4 +1,4 @@
-**Date**: Nov 20, 2026
+**Date**: Nov 21, 2026
 
 **Working with a coding agent**
 
@@ -8,6 +8,24 @@ We work with [opencode](https://opencode.ai) and its free models, but almost eve
 * the working folder, approvals and safety, prompt injection
 * sandboxing (Docker for opencode, `--sandbox` in Codex)
 * `AGENTS.md`, MCP servers (Hugging Face, Context7), skills and commands
+
+The demos use the small file [movies.csv](movies.csv) (four Czech movies). Copy it into an empty folder, run `git init`, and start `opencode` there.
+
+## Keep the agent inside its folder
+
+By default, opencode may read and edit files outside the folder you start it in. To stop that, put this `opencode.json` into the project folder:
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "permissions": [
+    { "action": "external_directory", "resource": "*", "effect": "deny" },
+    { "action": "shell", "resource": "*", "effect": "ask" }
+  ]
+}
+```
+
+The first rule blocks opencode's own read and write tools outside the folder. It does not stop shell commands like `cat ../file`, so the second rule makes every shell command ask you first. Read each command before you approve it. For a real guarantee, run the agent in a sandbox (Docker, or `codex --sandbox workspace-write`).
 
 ## Skills worth trying
 
