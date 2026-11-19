@@ -9,7 +9,14 @@ We work with [opencode](https://opencode.ai) and its free models, but almost eve
 * sandboxing (Docker for opencode, `--sandbox` in Codex)
 * `AGENTS.md`, MCP servers (Hugging Face, Context7), skills and commands
 
-The demos use the small file [movies.csv](movies.csv) (four Czech movies). Copy it into an empty folder, run `git init`, and start `opencode` there.
+## Data
+
+The demos and exercises use the real ČSFD data we scraped with an agent in Lesson 07 (Nov 13, 2026). Copy both files into an empty folder, run `git init`, and start `opencode` there.
+
+* [csfd_films.csv](csfd_films.csv): 2,526 films from the ČSFD rankings. Columns: title, year, country, genres, director, `csfd_rating_pct`, `rating_count`.
+* [csfd_ratings.csv](csfd_ratings.csv): 42,843 star ratings (1–5) from 491 users for 10,918 films, with rating dates from 2002 to 2026.
+
+Watch out, real data is messy. For 539 films, `csfd_rating_pct` is empty and `rating_count` holds the number of fans (e.g. `1856fanoušků`), not the number of ratings. A good agent notices this. Does yours?
 
 ## Keep the agent inside its folder
 
