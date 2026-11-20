@@ -1,11 +1,15 @@
-**Date**: Nov 21, 2026
+**Date**: Nov 21, 2026 · **Slides**: [Google Slides](https://docs.google.com/presentation/d/1MbkTpBd-fB05lQN65EDqdKo1QtdNG4wZ4PXqF2yhe1M/edit?usp=sharing)
 
 **Working with a coding agent** in [opencode](https://opencode.ai) with free models (it carries over to Codex and Claude Code): choosing a model ([Terminal-Bench](https://tbench.ai), [Artificial Analysis](https://artificialanalysis.ai), [OpenRouter](https://openrouter.ai/rankings)), the working folder, approvals and safety, prompt injection, sandboxing, `AGENTS.md`, MCP, skills and commands.
 
-**Assignment 03** (due Dec 3, 18:00):
+## Assignment 03 (due Dec 3, 18:00)
 
-* Use opencode (or another coding agent) to create a simple game. It can be anything: be creative and original. It does not need to be GTA 6. Something as simple as [Jablka](https://simecek.github.io/martin-html-hry/jablka.html) ([code](https://github.com/simecek/martin-html-hry)) is enough.
-* Put the code into a public GitHub repository. A single `index.html` is fine. You can host the game for free on [GitHub Pages](https://docs.github.com/en/pages/quickstart) (*Settings → Pages → Deploy from a branch*, `main`), or just ask the agent to set it up for you.
+Make a small browser game with a coding agent: opencode, or any other agent you like. The idea is up to you, and an original one is better than a copy of a well-known game. It does not have to be big. A few hundred lines in one `index.html` is plenty.
+
+**Example: [Jablka](https://simecek.github.io/martin-html-hry/jablka.html)** ([code](https://github.com/simecek/martin-html-hry))
+
+* Put the game into a public GitHub repository.
+* Publish it on [GitHub Pages](https://docs.github.com/en/pages/quickstart) (*Settings → Pages → Deploy from a branch*, `main`), so anyone can play it from a link. The agent can set this up for you.
 * Submit the links to your repository and your game through the form (I will share the link on Slack).
 
 ## Data and setup
