@@ -2,6 +2,12 @@
 
 **Working with a coding agent** in [opencode](https://opencode.ai) with free models (it carries over to Codex and Claude Code): choosing a model ([Terminal-Bench](https://tbench.ai), [Artificial Analysis](https://artificialanalysis.ai), [OpenRouter](https://openrouter.ai/rankings)), the working folder, approvals and safety, prompt injection, sandboxing, `AGENTS.md`, MCP, skills and commands.
 
+**Assignment 03** (due Dec 3, 18:00):
+
+* Use opencode (or another coding agent) to create a simple game. It can be anything: be creative and original. It does not need to be GTA 6. Something as simple as [Jablka](https://simecek.github.io/martin-html-hry/jablka.html) ([code](https://github.com/simecek/martin-html-hry)) is enough.
+* Put the code into a public GitHub repository. A single `index.html` is fine. You can host the game for free on [GitHub Pages](https://docs.github.com/en/pages/quickstart) (*Settings → Pages → Deploy from a branch*, `main`), or just ask the agent to set it up for you.
+* Submit the links to your repository and your game through the form (I will share the link on Slack).
+
 ## Data and setup
 
 Real ČSFD data scraped in Lesson 07:
@@ -15,7 +21,7 @@ cp /path/to/lesson08/csfd_*.csv /path/to/lesson08/opencode.json .
 git init && opencode
 ```
 
-Pick a model with `/models` (e.g. `deepseek-v4.1-flash-free`). One-off prompt: `opencode run -m opencode/<model> "<prompt>"`.
+Pick a model with `/models` (e.g. `deepseek-v4.1-flash-free`). One-off prompt: `opencode run -m opencode/<model> "<prompt>"`. Hit the free limit? See [free_llms.md](free_llms.md) (OpenRouter, Munito).
 
 **Keep the agent inside its folder.** By default opencode can read and edit files outside it. [opencode.json](opencode.json) in the project folder fixes that (any OS):
 
