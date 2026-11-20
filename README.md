@@ -19,7 +19,7 @@ In the upcoming sessions, we will cover topics like *Convolutional Neural Networ
   1. [Lesson 05](lesson05/) (16.10.): Hugging Face (Hub, `transformers`, `datasets`), OpenAI API, BERT and fine-tuning a classifier
   1. [Lesson 06](lesson06/) (6.11., online via Google Meet): How large language models are trained, thinking models (video)
   1. [Lesson 07](lesson07/) (13.11.): Tool calling, the agent loop, coding agents (opencode)
-  1. Lesson 08 (20.11.): TBD
+  1. [Lesson 08](lesson08/) (21.11.): Working with a coding agent (opencode): models, safety, sandboxing, AGENTS.md, MCP, skills
   1. Lesson 09 (27.11.): TBD
   1. Lesson 10 (4.12.): TBD
   1. Lesson 11 (11.12.): TBD
