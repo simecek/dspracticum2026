@@ -6,7 +6,7 @@ Welcome to the Data Science Practicum at the Faculty of Science, Masaryk Univers
 
 While the course is still in development, you can refer to its previous versions from [[2025]](https://github.com/simecek/dspracticum2025), [[2024]](https://github.com/simecek/dspracticum2024), [[2023]](https://github.com/simecek/dspracticum2023), [[2021]](https://github.com/simecek/dspracticum2021) and [[2020]](https://github.com/simecek/dspracticum2020) to get an idea of the content and structure.
 
-In the upcoming sessions, we will cover topics like *Convolutional Neural Networks*, *Transformers*, *Large language models*, *Tabular data*, and *Agentic systems*. For the exercises and homeworks, we will predominantly use Python but it is ok to start with zero knowledge of Python under the condition you can code in other langugage (e.g. R).
+In the upcoming sessions, we will cover topics like *Convolutional Neural Networks*, *Transformers*, *Large language models*, *Agentic systems*, *Time series*, *Tabular data* and *AI in biology*. For the exercises and homeworks, we will predominantly use Python but it is ok to start with zero knowledge of Python under the condition you can code in other langugage (e.g. R).
 
 ## Lessons
 
@@ -20,7 +20,7 @@ In the upcoming sessions, we will cover topics like *Convolutional Neural Networ
   1. [Lesson 06](lesson06/) (6.11., online via Google Meet): How large language models are trained, thinking models (video)
   1. [Lesson 07](lesson07/) (13.11.): Tool calling, the agent loop, coding agents (opencode)
   1. [Lesson 08](lesson08/) (21.11.): Working with a coding agent (opencode): models, safety, sandboxing, AGENTS.md, MCP, skills
-  1. Lesson 09 (27.11.): TBD
-  1. Lesson 10 (4.12.): TBD
-  1. Lesson 11 (11.12.): TBD
-  1. Lesson 12 (18.12.): Final discussion (show & tell)
+  1. [Lesson 09](lesson09/) (27.11.): Time series forecasting with sktime: baselines, classical models, foundation models
+  1. Lesson 10 (4.12.): Tabular data (Assignment 04)
+  1. Lesson 11 (11.12.): AI in biology
+  1. Lesson 12 (18.12.): Ethical questions, final discussion (show & tell)
